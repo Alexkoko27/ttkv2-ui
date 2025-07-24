@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TTKv2 Token Toolkit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Connected: <span id="account">...</span></h2>
+  <p>Balance: <span id="balance">...</span> TTKv2</p>
+
+  <h3>Transfer</h3>
+  <input placeholder="{to}" id="to"/>
+  <input placeholder="{amount}" id="amount"/>
+  <button onclick="transfer()">Send</button>
+
+  <h3>Mint (owner only)</h3>
+  <input placeholder="{mintTo}" id="mintTo"/>
+  <input placeholder="{mintAmount}" id="mintAmount"/>
+  <button onclick="mint()">Mint</button>
+
+  <h3>Burn (self)</h3>
+  <input placeholder="{burnAmount}" id="burnAmount"/>
+  <button onclick="burn()">Burn</button>
+
+  <h3>Burn From (allowance)</h3>
+  <input placeholder="{burnFromAddress}" id="burnFromAddress"/>
+  <input placeholder="{burnFromAmount}" id="burnFromAmount"/>
+  <button onclick="burnFrom()">Burn From</button>
+
+  <h3>MultiSend</h3>
+  <textarea id="multiSendData" rows="5" cols="40"></textarea><br/>
+  <button onclick="multiSend()">Send Multi</button>
+
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

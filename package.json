@@ -1,0 +1,11 @@
+{
+  "name": "ttkv2-ui",
+  "version": "1.0.0",
+  "description": "Frontend UI to interact with the TestTokenV2 ERC-20 smart contract",
+  "main": "app.js",
+  "scripts": {
+    "start": "echo \"Static UI\""
+  },
+  "author": "Alexkoko27",
+  "license": "MIT"
+}

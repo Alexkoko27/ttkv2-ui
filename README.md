@@ -1,2 +1,3 @@
-# ttkv2-ui
-Frontend UI to interact with the TestTokenV2 ERC-20 smart contract
+# TTKv2 Token Toolkit UI
+
+React-интерфейс для взаимодействия с контрактом TestTokenV2.
